@@ -1,0 +1,146 @@
+<!--
+Tamim Parvez Tapu - GitHub Pages Single-file Portfolio
+Instructions:
+1) Save this file as `index.html` in a repository named `your-github-username.github.io`.
+2) Create a folder named `assets` in the repo and add your `photo.jpg` and `CV.pdf` there.
+   - Replace /assets/photo.jpg and /assets/CV.pdf with your real files or rename accordingly.
+3) Edit the placeholders below: EMAIL, LINKEDIN_URL, GITHUB_URL, GOOGLE_SCHOLAR_URL, RESEARCHGATE_URL
+4) Commit & push. GitHub Pages will publish at https://your-github-username.github.io
+
+Notes:
+- This is a minimal, academic, mobile-friendly layout. Replace text and links where marked.
+- If you want a multi-file repo (separate CSS/JS), I can generate those too.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>M Tamim Parvez Tapu — Civil Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of M Tamim Parvez Tapu — Civil Engineering. Research interests: Structural Dynamics, Structural Health Monitoring, Digital Twins.">
+  <style>
+    :root{--accent:#0b5cff;--text:#222;--muted:#6b6b6b;--card:#fff;--bg:#f7f8fb}
+    *{box-sizing:border-box}
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;margin:0;color:var(--text);background:var(--bg);line-height:1.5}
+    .container{max-width:900px;margin:40px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .photo{width:120px;height:120px;border-radius:8px;overflow:hidden;flex:0 0 120px;background:#ddd}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav.top{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff;font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:28px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(15,15,15,0.06)}
+    h2{margin:0 0 12px;font-size:1.1rem}
+    ul.clean{padding-left:18px;margin:8px 0}
+    .muted{color:var(--muted);font-size:0.95rem}
+    .meta{font-size:0.95rem;color:var(--muted);margin-bottom:10px}
+    .project{margin-bottom:12px}
+    footer{margin-top:36px;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.photo{width:96px;height:96px;flex:0 0 96px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="photo card">
+        <!-- Replace with your photo at /assets/photo.jpg -->
+        <img src="/assets/photo.jpg" alt="M Tamim Parvez Tapu">
+      </div>
+      <div>
+        <h1>M Tamim Parvez Tapu</h1>
+        <p class="lead">I am a Civil Engineering graduate from BUET with research focused on sustainable structural materials and advanced monitoring methods. My work combines experimental non‑destructive evaluation and practical application to improve durability and lifecycle performance of construction materials.</p>
+        <nav class="top">
+          <a class="btn" href="/assets/CV.pdf" download>Download CV</a>
+          <a class="muted" href="#research">Research</a>
+          <a class="muted" href="#projects">Projects</a>
+          <a class="muted" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="about" class="card">
+          <h2>About</h2>
+          <p class="meta">B.Sc. in Civil Engineering — Bangladesh University of Engineering and Technology (BUET). Interested in material characterization, monitoring, and computational modeling for resilient infrastructure.</p>
+
+          <h3 style="margin-top:12px">Research interests</h3>
+          <ul class="clean">
+            <li>Structural Dynamics</li>
+            <li>Structural Health Monitoring</li>
+            <li>Digital Twins</li>
+            <li>Sustainable and circular materials</li>
+            <li>Non‑destructive evaluation & material testing</li>
+          </ul>
+        </section>
+
+        <section id="research" class="card" style="margin-top:18px">
+          <h2>Research</h2>
+          <p class="muted">Thesis</p>
+          <div class="project">
+            <strong>Non‑destructive Evaluation of Concrete Compressive Strength Containing Steel Slag as Partially Replaced Coarse Aggregate</strong>
+            <p class="muted">Summary: Experimental study combining Ultrasonic Pulse Velocity (UPV), Rebound Hammer, and compressive testing to establish correlations and predict compressive strength when steel slag replaces coarse aggregate. Explores optimum replacement percentage and proposes models for non‑destructive prediction.</p>
+          </div>
+
+          <h3 style="margin-top:8px">Selected methods & tools</h3>
+          <ul class="clean">
+            <li>Ultrasonic Pulse Velocity (UPV)</li>
+            <li>Rebound Hammer testing</li>
+            <li>Compressive strength testing</li>
+            <li>Excel-based data analysis; simple statistical modeling</li>
+          </ul>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:18px">
+          <h2>Projects</h2>
+          <div class="project">
+            <strong>Redevelopment of Karwan Bazar</strong>
+            <p class="muted">A capstone project focusing on sustainable market building design and overhead parking to reduce congestion, including preliminary surveying, structural design, internal traffic flow planning, and waste & water management systems. Led feasibility studies and coordinated a multidisciplinary team.</p>
+          </div>
+
+          <div class="project">
+            <strong>Slag concrete — Strength & Nondestructive Correlations</strong>
+            <p class="muted">Developed linear and exponential correlations between UPV/Rebound Hammer values and compressive strength; identified ~50% slag replacement as optimal in tested mixes.</p>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h2>Quick facts</h2>
+          <p class="meta">Location: Dhaka, Bangladesh</p>
+          <p class="meta">Open to PhD opportunities (Fall intake)</p>
+
+          <h3 style="margin-top:12px">Contact</h3>
+          <p class="muted" id="contact">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p class="muted">LinkedIn: <a href="LINKEDIN_URL">profile</a></p>
+          <p class="muted">GitHub: <a href="GITHUB_URL">github</a></p>
+          <p class="muted">Google Scholar: <a href="GOOGLE_SCHOLAR_URL">scholar</a></p>
+
+          <h3 style="margin-top:12px">Quick links</h3>
+          <p><a href="#research">Research →</a></p>
+          <p><a href="#projects">Projects →</a></p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>Download</h2>
+          <p class="muted">Curriculum Vitae and any selected PDFs are linked below. Replace the placeholder files in /assets with your real files.</p>
+          <p><a class="btn" href="/assets/CV.pdf" download>Download CV</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>© <span id="year"></span> M Tamim Parvez Tapu — Built for PhD applications • Minimal academic portfolio</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
